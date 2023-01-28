@@ -2,16 +2,16 @@
 title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
-  - python
-  - javascript
+  - json
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
+  - <h4>Prozo Distribution Private Ltd.<h4>
 
 includes:
+  - track
+  - pricing
+  - status
+  - service
   - errors
 
 search: true
@@ -71,9 +71,9 @@ Kittn expects for the API key to be included in all API requests to the server i
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-# Kittens
+# Create Shipment
 
-## Get All Kittens
+## Create Forward Shipment (B2C)
 
 ```ruby
 require 'kittn'
@@ -139,7 +139,7 @@ available | true | If set to false, the result will include kittens that have al
 Remember — a happy kitten is an authenticated kitten!
 </aside>
 
-## Get a Specific Kitten
+## Create Reverse Shipment (B2C)
 
 ```ruby
 require 'kittn'
@@ -193,7 +193,7 @@ Parameter | Description
 --------- | -----------
 ID | The ID of the kitten to retrieve
 
-## Delete a Specific Kitten
+## Cancel Shipment
 
 ```ruby
 require 'kittn'
